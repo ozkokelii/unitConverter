@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Uzunluk extends StatefulWidget {
+class Basinc extends StatefulWidget {
   @override
   _UzunlukState createState() => _UzunlukState();
 }
 
-class _UzunlukState extends State<Uzunluk> {
+class _UzunlukState extends State<Basinc> {
   String uzunlukValue = "cm";
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class _UzunlukState extends State<Uzunluk> {
       appBar: AppBar(
         toolbarHeight: 70,
         title: Text(
-          "Uzunluk Birim Dönüştürücüsü",
+          "Basınç Birim Dönüştürücüsü",
           style: TextStyle(fontSize: 18),
         ),
       ),
@@ -29,8 +29,8 @@ class _UzunlukState extends State<Uzunluk> {
             children: [
               TextFormField(
                 decoration: InputDecoration(
-                  labelText: "UZUNLUK DEĞERİ",
-                  hintText: "Lütfen Uzunluk Girin!",
+                  labelText: "BASINÇ DEĞERİ",
+                  hintText: "Lütfen Basınç Değerinizi Girin!",
                   enabledBorder: OutlineInputBorder(
                       borderSide:
                       BorderSide(color: Colors.teal.shade200, width: 1)),
@@ -45,9 +45,9 @@ class _UzunlukState extends State<Uzunluk> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Image.asset(
-                    "images/uzunluk1.jpg",
-                    height: 80,
-                    width: 90,
+                    "images/basinc.png",
+                    height: 70,
+                    width: 80,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -55,7 +55,7 @@ class _UzunlukState extends State<Uzunluk> {
                       height: 40,
                       width: 200,
                       child: Text(
-                          "Uzunluk Biriminizi Dönüştürmek İçin Kaydet Butonuna Basınız!"),
+                          "Basınç Biriminizi Dönüştürmek İçin Kaydet Butonuna Basınız!"),
                     ),
                   ),
                   Container(
@@ -85,7 +85,7 @@ class _UzunlukState extends State<Uzunluk> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
-                    "UZUNLUK İLE İLGİLİ DÖNÜŞÜM SONUÇLARI",
+                    "BASINÇ İLE İLGİLİ DÖNÜŞÜM SONUÇLARI",
                     textAlign: TextAlign.center,
                   ),
                 ),

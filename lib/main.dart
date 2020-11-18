@@ -1,4 +1,3 @@
-import 'package:bil_uyg/ui/uzunluk.dart';
 import 'package:flutter/material.dart';
 
 import 'ana_sayfa.dart';
@@ -13,7 +12,6 @@ class MyApp extends StatelessWidget {
       title: "Birim Dönüştürücü",
 /*
       initialRoute: "/anaSayfa",
-
       routes: {
         "/": (context) => AnaSayfa(),
         "/anaSayfa" : (context) => AnaSayfa(),
